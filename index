@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydrogen Safety Leadership Initiative</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <div class="brand">CENTER FOR HYDROGEN SAFETY</div>
+      <a href="#tiers" class="nav-link">Recognition Tiers</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Hydrogen Safety Leadership Initiative</p>
+      <h1>Uniting organizations committed to world-class hydrogen safety.</h1>
+      <p class="hero-text">
+        A tiered recognition framework for organizations demonstrating increasing
+        levels of commitment, leadership, transparency, and excellence in hydrogen safety.
+      </p>
+      <a href="#tiers" class="button">Explore the Framework</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <p class="eyebrow">Initiative Overview</p>
+      <h2>A maturity journey, not a compliance checklist.</h2>
+      <p>
+        The Hydrogen Safety Leadership Initiative rewards genuine community contribution,
+        operational learning, and sustained improvement. Each tier builds on the last,
+        giving organizations a clear pathway to grow from foundational participation to
+        recognized industry leadership.
+      </p>
+    </section>
+
+    <section id="tiers" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Three Recognition Levels</p>
+        <h2>Recognition grows with commitment, contribution, and evidence.</h2>
+      </div>
+
+      <div class="tier-grid">
+        <article class="tier-card green">
+          <span class="tier-label">Tier 1</span>
+          <h3>H2 Safety Champions Program</h3>
+          <p class="tier-subtitle">Commitment & Transparency</p>
+          <p>
+            Entry-level recognition for organizations establishing foundational hydrogen
+            safety culture and practices.
+          </p>
+          <ul>
+            <li>Executive endorsement of hydrogen safety principles</li>
+            <li>Designated hydrogen safety lead</li>
+            <li>Participation in safety training and education</li>
+            <li>Basic incident and near-miss tracking</li>
+            <li>Annual lesson learned, case study, or best practice submission</li>
+          </ul>
+          <p class="membership">CHS membership encouraged</p>
+        </article>
+
+        <article class="tier-card blue featured">
+          <span class="tier-label">Tier 2</span>
+          <h3>Hydrogen Safety Vanguard Circle</h3>
+          <p class="tier-subtitle">Leadership & Contribution</p>
+          <p>
+            Advanced recognition for organizations actively shaping the hydrogen safety
+            community through mentorship, collaboration, and technical leadership.
+          </p>
+          <ul>
+            <li>Formal hydrogen-specific process safety management</li>
+            <li>Hazard analysis and risk assessment processes</li>
+            <li>Hydrogen competency programs</li>
+            <li>Peer mentoring, site exchanges, or event presentations</li>
+            <li>Participation in CHS working groups or committees</li>
+          </ul>
+          <p class="membership">Active CHS membership required</p>
+        </article>
+
+        <article class="tier-card gray">
+          <span class="tier-label">Tier 3</span>
+          <h3>Hydrogen Safety Gold Standard Recognition</h3>
+          <p class="tier-subtitle">Excellence & Performance</p>
+          <p>
+            The highest level of recognition for organizations demonstrating world-class
+            safety performance, independent validation, and sustained industry stewardship.
+          </p>
+          <ul>
+            <li>Multi-year record of strong hydrogen safety performance</li>
+            <li>Independent assessment, audit, or peer review</li>
+            <li>Influence on standards, codes, and technical resources</li>
+            <li>Published case studies or knowledge contributions</li>
+            <li>Demonstrated just culture and learning culture principles</li>
+          </ul>
+          <p class="membership">CHS membership + documented contribution required</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pillars">
+      <div class="section-heading">
+        <p class="eyebrow">Program Pillars</p>
+        <h2>Consistent criteria across all tiers.</h2>
+      </div>
+
+      <div class="pillar-grid">
+        <div class="pillar"><h3>Leadership & Governance</h3><p>Executive accountability, ownership, and formal commitment to hydrogen safety culture.</p></div>
+        <div class="pillar"><h3>Safety Management Systems</h3><p>Structured processes for hazard identification, risk assessment, and process safety.</p></div>
+        <div class="pillar"><h3>Workforce Competency</h3><p>Training, contractor expectations, and verified hydrogen safety knowledge.</p></div>
+        <div class="pillar"><h3>Operational Learning & Transparency</h3><p>Incident reporting, near-miss tracking, lesson sharing, and open learning.</p></div>
+        <div class="pillar"><h3>Community Contribution</h3><p>Engagement in CHS activities, peer mentoring, working groups, and knowledge advancement.</p></div>
+        <div class="pillar"><h3>Continuous Improvement & Innovation</h3><p>Improvement cycles, emerging practices, and proactive risk-reduction initiatives.</p></div>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="callout">
+        <p class="eyebrow">Design Principles</p>
+        <h2>Credible, inclusive, and mission-aligned.</h2>
+        <p>
+          Mandatory elements are paired with flexible leadership criteria, allowing
+          organizations to demonstrate maturity through meaningful contributions such as
+          case studies, mentoring, conference presentations, working groups, peer review,
+          or guidance development.
+        </p>
+      </div>
+
+      <div class="renewal">
+        <h3>Renewal Structure</h3>
+        <ul>
+          <li><strong>Champions:</strong> Annual affirmation of continued commitment</li>
+          <li><strong>Vanguard:</strong> Requalification every 2–3 years with evidence</li>
+          <li><strong>Gold Standard:</strong> Requalification every 2–3 years with third-party validation</li>
+        </ul>
+
+        <blockquote>
+          Recognition is based not on the absence of incidents, but on demonstrated
+          commitment to learning, transparency, and continuous improvement.
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section rationale">
+      <h2>Strategic Rationale</h2>
+      <p>
+        Organizations recognized as hydrogen safety leaders should actively contribute
+        to advancing hydrogen safety for the broader community. That is defensible,
+        mission-aligned, and central to CHS’ role as a convening body for shared learning.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Center for Hydrogen Safety • Hydrogen Safety Leadership Initiative</p>
+  </footer>
+</body>
+</html>
