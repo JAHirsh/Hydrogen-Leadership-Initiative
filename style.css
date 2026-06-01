@@ -455,3 +455,9 @@ footer {
     font-size: clamp(2.8rem, 11vw, 4rem);
   }
 }
+.brand img.nav-logo {
+  width: 180px !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block;
+}
