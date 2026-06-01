@@ -39,13 +39,12 @@ body {
   line-height: 1.6;
 }
 
-/* White header bar */
+/* Header */
 nav {
   background: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: none;
   width: 100%;
   margin: 0;
   padding: 16px 40px;
@@ -57,12 +56,16 @@ nav {
 .brand {
   display: flex;
   align-items: center;
+  background: var(--white);
+  padding: 8px 14px;
+  border-radius: 12px;
 }
 
 .nav-logo {
-  width: 125px;
+  width: 95px;
   height: auto;
   display: block;
+  background: var(--white);
 }
 
 .nav-link {
@@ -73,7 +76,7 @@ nav {
 
 /* Hero */
 .hero {
-  min-height: 75vh;
+  min-height: 72vh;
   background:
     linear-gradient(90deg, rgba(0, 95, 131, 0.96), rgba(0, 75, 102, 0.84)),
     radial-gradient(circle at 82% 18%, rgba(93, 187, 34, 0.42), transparent 28%),
@@ -95,9 +98,9 @@ nav {
 }
 
 .hero-content {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 115px 24px 155px;
+  padding: 105px 24px 135px;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -120,10 +123,10 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(4.4rem, 8.5vw, 7.6rem);
-  line-height: 0.95;
-  max-width: 1100px;
-  margin: 0 auto 24px auto;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
   font-weight: 800;
   color: var(--white);
 }
@@ -139,21 +142,21 @@ h3 {
 }
 
 .hero-text {
-  max-width: 900px;
-  font-size: clamp(1.25rem, 2vw, 1.6rem);
-  line-height: 1.45;
+  max-width: 850px;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  line-height: 1.5;
   font-style: italic;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.95);
-  margin: 0 auto 22px auto;
+  margin: 0 auto 20px auto;
 }
 
 .hero-description {
-  max-width: 850px;
-  font-size: 1.16rem;
+  max-width: 800px;
+  font-size: 1.08rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.86);
-  margin: 0 auto 38px auto;
+  margin: 0 auto 36px auto;
 }
 
 .button {
@@ -453,7 +456,7 @@ footer {
   }
 
   .nav-logo {
-    width: 120px;
+    width: 95px;
   }
 
   .hero-content {
@@ -461,6 +464,6 @@ footer {
   }
 
   h1 {
-    font-size: clamp(3rem, 12vw, 4.6rem);
+    font-size: clamp(2.8rem, 11vw, 4rem);
   }
 }
