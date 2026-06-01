@@ -61,17 +61,6 @@ nav {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-.nav-logo {
-  width: 200px;
-  height: auto;
-  display: block;
-}
-
-.nav-link {
-  color: var(--chs-blue);
-  text-decoration: none;
-  font-weight: 700;
-}
 
 /* Hero */
 .hero {
