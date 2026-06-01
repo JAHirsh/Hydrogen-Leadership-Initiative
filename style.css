@@ -11,14 +11,24 @@
   --chs-gray-dark: #55585A;
   --chs-gray-light: #F2F4F4;
 
+  --platinum: #B8BDC1;
+  --platinum-light: #F4F5F6;
+
   --text: #1D1D1D;
   --muted: #55585A;
   --light: #F7F9FA;
   --white: #FFFFFF;
+
+  --shadow: 0 24px 70px rgba(0, 95, 131, 0.14);
+  --radius: 22px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,17 +46,19 @@ nav {
   max-width: 1180px;
   margin: 0 auto;
   padding: 28px 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .brand {
   font-size: 0.82rem;
   letter-spacing: 0.12em;
   font-weight: 700;
-  color: var(--chs-blue);
+  color: var(--white);
 }
 
 .nav-link {
-  color: var(--chs-blue);
+  color: var(--white);
   text-decoration: none;
   font-weight: 700;
 }
@@ -54,10 +66,10 @@ nav {
 .hero {
   min-height: 78vh;
   background:
-    linear-gradient(90deg, rgba(0,107,143,0.9), rgba(0,107,143,0.62)),
-    radial-gradient(circle at 80% 20%, rgba(99,190,32,0.5), transparent 28%),
-    linear-gradient(135deg, #eef7fb, #ffffff);
-  color: white;
+    linear-gradient(90deg, rgba(0, 95, 131, 0.96), rgba(0, 75, 102, 0.82)),
+    radial-gradient(circle at 82% 18%, rgba(93, 187, 34, 0.45), transparent 28%),
+    linear-gradient(135deg, var(--chs-blue-light), var(--white));
+  color: var(--white);
   position: relative;
   overflow: hidden;
 }
@@ -70,7 +82,7 @@ nav {
   border-radius: 50%;
   right: -160px;
   bottom: -180px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .hero-content {
@@ -91,10 +103,12 @@ nav {
 }
 
 .hero .eyebrow {
-  color: #d9ffb9;
+  color: var(--chs-green-light);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.12;
   margin-top: 0;
 }
@@ -118,14 +132,14 @@ h3 {
 .hero-text {
   max-width: 720px;
   font-size: 1.28rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .button {
   display: inline-block;
   margin-top: 28px;
   background: var(--chs-green);
-  color: #0b2303;
+  color: var(--white);
   padding: 15px 24px;
   border-radius: 999px;
   text-decoration: none;
@@ -158,35 +172,37 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 26px;
+  align-items: stretch;
 }
 
 .tier-card {
-  background: white;
-  border: 2px solid #d9e2e6;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 2px solid var(--chs-gray-light);
   border-radius: var(--radius);
   padding: 32px;
   box-shadow: var(--shadow);
-  position: relative;
+  height: 100%;
+  min-height: 920px;
 }
 
-.tier-card.featured {
-  transform: translateY(-18px);
-}
-
-.tier-card.green {
+.tier-card.champions {
   border-color: var(--chs-green);
 }
 
-.tier-card.blue {
+.tier-card.vanguard {
   border-color: var(--chs-blue);
 }
 
-.tier-card.gray {
-  border-color: var(--chs-gray);
+.tier-card.platinum {
+  border-color: var(--platinum);
+  background: linear-gradient(180deg, var(--white) 0%, var(--platinum-light) 100%);
 }
 
 .tier-label {
   display: inline-block;
+  width: fit-content;
   margin-bottom: 18px;
   padding: 6px 12px;
   border-radius: 999px;
@@ -195,6 +211,14 @@ h3 {
   font-weight: 800;
   font-size: 0.78rem;
   text-transform: uppercase;
+}
+
+.vanguard .tier-label {
+  background: var(--chs-blue-light);
+}
+
+.platinum .tier-label {
+  background: var(--platinum-light);
 }
 
 .tier-card h3 {
@@ -207,6 +231,14 @@ h3 {
   color: var(--chs-green);
 }
 
+.vanguard .tier-subtitle {
+  color: var(--chs-blue);
+}
+
+.platinum .tier-subtitle {
+  color: var(--chs-gray-dark);
+}
+
 ul {
   padding-left: 20px;
 }
@@ -216,7 +248,7 @@ li {
 }
 
 .membership {
-  margin-top: 28px;
+  margin-top: auto;
   padding: 14px 16px;
   border-radius: 14px;
   background: var(--light);
@@ -243,11 +275,21 @@ li {
 }
 
 .pillar {
-  background: white;
+  background: var(--white);
   border-radius: 20px;
   padding: 26px;
   border-top: 7px solid var(--chs-green);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.06);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+}
+
+.pillar:nth-child(2),
+.pillar:nth-child(5) {
+  border-top-color: var(--chs-blue);
+}
+
+.pillar:nth-child(3),
+.pillar:nth-child(6) {
+  border-top-color: var(--chs-gray);
 }
 
 .pillar h3 {
@@ -273,12 +315,20 @@ li {
 
 .callout h2,
 .callout .eyebrow {
-  color: #062800;
+  color: var(--white);
+}
+
+.callout p {
+  color: var(--white);
 }
 
 .renewal {
   border-left: 8px solid var(--chs-blue);
   padding: 28px 0 28px 32px;
+}
+
+.renewal h3 {
+  color: var(--chs-blue);
 }
 
 blockquote {
@@ -291,40 +341,80 @@ blockquote {
   font-weight: 700;
 }
 
+.membership-section {
+  padding-top: 40px;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.membership-card {
+  background: var(--white);
+  border: 2px solid var(--chs-gray-light);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: var(--shadow);
+  border-top-width: 12px;
+}
+
+.membership-card h3 {
+  color: var(--chs-blue);
+}
+
+.membership-card p {
+  color: var(--muted);
+}
+
+.champions-top {
+  border-top-color: var(--chs-green);
+}
+
+.vanguard-top {
+  border-top-color: var(--chs-blue);
+}
+
+.platinum-top {
+  border-top-color: var(--platinum);
+}
+
 .rationale {
   background: linear-gradient(135deg, var(--chs-blue), var(--chs-blue-dark));
-  color: white;
+  color: var(--white);
   max-width: none;
   text-align: center;
 }
 
 .rationale h2 {
-  color: white;
+  color: var(--white);
 }
 
 .rationale p {
   max-width: 850px;
   margin: 0 auto;
   font-size: 1.25rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 footer {
   padding: 32px 24px;
   text-align: center;
   color: var(--muted);
-  background: #f0f4f6;
+  background: var(--chs-gray-light);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .tier-grid,
   .pillar-grid,
-  .split {
+  .split,
+  .membership-grid {
     grid-template-columns: 1fr;
   }
 
-  .tier-card.featured {
-    transform: none;
+  .tier-card {
+    min-height: auto;
   }
 
   nav {
