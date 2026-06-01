@@ -54,12 +54,11 @@ nav {
 }
 
 .brand {
-   display: flex;
-  align-items: center;
-  background: #ffffff;
-  padding: 10px 16px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: var(--chs-blue);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 /* Hero */
@@ -443,9 +442,6 @@ footer {
     padding: 16px 24px;
   }
 
-  .nav-logo {
-    width: 95px;
-  }
 
   .hero-content {
     padding-top: 80px;
