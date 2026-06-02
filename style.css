@@ -173,7 +173,7 @@ h3 {
 
 .intro {
   text-align: center;
-  max-width: 650px;
+  max-width: 950px;
 }
 
 .intro p:last-child,
@@ -204,7 +204,7 @@ h3 {
   padding: 32px;
   box-shadow: var(--shadow);
   height: 100%;
-  min-height: 920px;
+  min-height: 650px;
 }
 
 .tier-card.champions {
@@ -354,7 +354,7 @@ li {
 }
 
 blockquote {
-  margin: 30px 0 0;
+  margin: 850px 0 0;
   padding: 24px;
   background: var(--light);
   border-left: 5px solid var(--chs-green);
