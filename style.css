@@ -354,13 +354,14 @@ li {
 }
 
 blockquote {
-  margin: 850px 0 0;
+  margin: 20px 0 0;
   padding: 24px;
   background: var(--light);
   border-left: 5px solid var(--chs-green);
   font-size: 1.1rem;
   color: var(--chs-blue-dark);
   font-weight: 700;
+  max-width: 100%;
 }
 
 /* Membership section */
