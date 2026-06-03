@@ -460,3 +460,7 @@ footer {
     font-size: clamp(2.8rem, 11vw, 4rem);
   }
 }
+h3 sub {
+  font-size: 0.65em;
+  vertical-align: sub;
+}
