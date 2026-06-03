@@ -361,7 +361,6 @@ blockquote {
   font-size: 1.1rem;
   color: var(--chs-blue-dark);
   font-weight: 700;
-  max-width: 100%;
 }
 
 /* Membership section */
