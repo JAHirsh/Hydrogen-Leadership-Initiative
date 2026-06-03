@@ -463,3 +463,13 @@ h3 sub {
   font-size: 0.65em;
   vertical-align: sub;
 }
+.form-section {
+  text-align: center;
+}
+
+.form-section iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  background: white;
+}
